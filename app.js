@@ -38,9 +38,9 @@ passport.deserializeUser(function(id, cb) {
 // initialise express
 //
 var app = express();
-
 app.set('views', appRoot + '/views');
 app.set('view engine', 'ejs');
+app.set('layout', 'layouts/default');
 app.use(require('express-ejs-layouts'));
 app.use(require('morgan')('combined'));
 app.use(require('cookie-parser')());
@@ -67,9 +67,6 @@ if ( app.get('env') === 'development' ) {
 //
 //auth managment roots
 //
-app.get('/login',(req,res)=>{
-  res.send("get")
-})
 app.post('/login',
   passport.authenticate('local', { failureRedirect: '/login' }),
   function(req, res) {
