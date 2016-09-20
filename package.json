@@ -1,13 +1,13 @@
 {
   "name": "express-base-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "A base app for projects using express and rethinkdb ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "max campbell",
-  "license": "ISC",
+  "license": "CC-BY-4.0",
   "dependencies": {
     "app-root-path": "^2.0.1",
     "bcrypt": "^0.8.7",
@@ -26,5 +26,13 @@
     "gulp": "^3.9.1",
     "gulp-imagemin": "^3.0.3",
     "gulp-sass": "^2.3.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/initd-daemon/express-rethink-base.git"
+  },
+  "bugs": {
+    "url": "https://github.com/initd-daemon/express-rethink-base/issues"
+  },
+  "homepage": "https://github.com/initd-daemon/express-rethink-base#readme"
 }
