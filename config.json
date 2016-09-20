@@ -1,0 +1,6 @@
+{
+  "session":{
+    "secret":"that fat cat"
+  },
+  "port":8000
+}
