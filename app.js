@@ -70,7 +70,7 @@ if ( app.get('env') === 'development' ) {
 app.post('/login',
   passport.authenticate('local', { failureRedirect: '/login' }),
   function(req, res) {
-    res.redirect('/');
+    res.redirect('/account');
 });
 //
 // start the app
